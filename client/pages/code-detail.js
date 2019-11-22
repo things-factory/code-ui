@@ -1,7 +1,7 @@
 import '@things-factory/form-ui'
 import '@things-factory/grist-ui'
 import { i18next, localize } from '@things-factory/i18n-base'
-import { client, gqlBuilder, isMobileDevice, ScrollbarStyles } from '@things-factory/shell'
+import { client, CustomAlert, gqlBuilder, isMobileDevice, ScrollbarStyles } from '@things-factory/shell'
 import gql from 'graphql-tag'
 import { css, html, LitElement } from 'lit-element'
 
@@ -276,6 +276,7 @@ export class CodeDetail extends localize(i18next)(LitElement) {
         for (let key in dirtyFields) {
           patchField[key] = dirtyFields[key].after
         }
+        patchField.commonCode = { id: this.id }
         patchField.cuFlag = code.__dirty__
 
         return patchField

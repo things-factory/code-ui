@@ -2,7 +2,7 @@ import '@things-factory/form-ui'
 import '@things-factory/grist-ui'
 import { i18next, localize } from '@things-factory/i18n-base'
 import { openPopup } from '@things-factory/layout-base'
-import { client, gqlBuilder, isMobileDevice, PageView, ScrollbarStyles } from '@things-factory/shell'
+import { client, CustomAlert, gqlBuilder, isMobileDevice, PageView, ScrollbarStyles } from '@things-factory/shell'
 import gql from 'graphql-tag'
 import { css, html } from 'lit-element'
 import './code-detail'
@@ -159,7 +159,7 @@ class CodeList extends localize(i18next)(PageView) {
     const response = await client.query({
       query: gql`
         query {
-          codes: commonCodes(${gqlBuilder.buildArgs({
+          commonCodes(${gqlBuilder.buildArgs({
             filters: this.searchForm.queryFilters,
             pagination: { page, limit },
             sortings: sorters

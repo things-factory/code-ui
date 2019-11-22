@@ -5,8 +5,8 @@ export default {
   route,
   routes: [
     {
-      tagname: 'code-ui-main',
-      page: 'code-ui-main'
+      tagname: 'code-list',
+      page: 'codes'
     }
   ],
   bootstrap
