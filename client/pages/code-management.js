@@ -273,4 +273,4 @@ class CodeManagement extends localize(i18next)(PageView) {
   }
 }
 
-customElements.define('code-management,', CodeManagement)
+customElements.define('code-management', CodeManagement)
