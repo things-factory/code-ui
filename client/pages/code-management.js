@@ -217,7 +217,7 @@ class CodeManagement extends localize(i18next)(PageView) {
       const anwer = await CustomAlert({
         type: 'warning',
         title: i18next.t('button.delete'),
-        text: i18next.t('text.are_your_sure'),
+        text: i18next.t('text.are_you_sure'),
         confirmButton: { text: i18next.t('button.delete') },
         cancelButton: { text: i18next.t('button.cancel') }
       })
@@ -267,7 +267,7 @@ class CodeManagement extends localize(i18next)(PageView) {
       {
         backdrop: true,
         size: 'large',
-        title: `${i18next.t('title.system_code_detail')} - ${name}`
+        title: `${i18next.t('title.code_management_detail')} - ${name}`
       }
     )
   }

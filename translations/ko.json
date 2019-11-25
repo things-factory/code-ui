@@ -1,3 +1,17 @@
 {
-  "label.module": "모듈"
+  "button.cancel": "취소",
+  "button.delete": "삭제",
+  "button.save": "저장",
+  "field.description": "설명",
+  "field.name": "이름",
+  "field.rank": "순위",
+  "field.updated_at": "수정일시",
+  "field.updater": "수정자",
+  "text.are_you_sure": "진행하시겠습니까?",
+  "text.nothing_changed": "변경사항 없음",
+  "text.nothing_selected": "선택되지 않음",
+  "text.there_is_nothing_to_delete": "삭제할 데이터가 없습니다.",
+  "text.there_is_nothing_to_save": "저장할 데이터가 없습니다.",
+  "title.code_management": "공통코드 관리",
+  "title.code_management_detail": "공통코드 관리 상세"
 }

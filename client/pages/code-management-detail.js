@@ -243,7 +243,7 @@ export class CodeManagementDetail extends localize(i18next)(LitElement) {
       const anwer = await CustomAlert({
         type: 'warning',
         title: i18next.t('button.delete'),
-        text: i18next.t('text.are_your_sure'),
+        text: i18next.t('text.are_you_sure'),
         confirmButton: { text: i18next.t('button.delete') },
         cancelButton: { text: i18next.t('button.cancel') }
       })
