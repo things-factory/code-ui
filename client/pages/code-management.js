@@ -5,9 +5,9 @@ import { openPopup } from '@things-factory/layout-base'
 import { client, CustomAlert, gqlBuilder, isMobileDevice, PageView, ScrollbarStyles } from '@things-factory/shell'
 import gql from 'graphql-tag'
 import { css, html } from 'lit-element'
-import './code-detail'
+import './code-management-detail'
 
-class CodeList extends localize(i18next)(PageView) {
+class CodeManagement extends localize(i18next)(PageView) {
   static get properties() {
     return {
       searchFields: Array,
@@ -273,4 +273,4 @@ class CodeList extends localize(i18next)(PageView) {
   }
 }
 
-customElements.define('code-list', CodeList)
+customElements.define('code-management,', CodeManagement)

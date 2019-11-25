@@ -5,7 +5,7 @@ import { client, CustomAlert, gqlBuilder, isMobileDevice, ScrollbarStyles } from
 import gql from 'graphql-tag'
 import { css, html, LitElement } from 'lit-element'
 
-export class CodeDetail extends localize(i18next)(LitElement) {
+export class CodeManagementDetail extends localize(i18next)(LitElement) {
   static get styles() {
     return [
       ScrollbarStyles,
@@ -287,4 +287,4 @@ export class CodeDetail extends localize(i18next)(LitElement) {
   }
 }
 
-window.customElements.define('code-detail', CodeDetail)
+window.customElements.define('code-management-detail', CodeManagementDetail)

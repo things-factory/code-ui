@@ -5,7 +5,7 @@ export default {
   route,
   routes: [
     {
-      tagname: 'code-list',
+      tagname: 'code-management',
       page: 'codes'
     }
   ],
