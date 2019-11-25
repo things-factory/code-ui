@@ -259,15 +259,15 @@ class CodeManagement extends localize(i18next)(PageView) {
     return patches
   }
 
-  openCodeDetail(id, name) {
+  openCodeDetail(codeId, codeName) {
     openPopup(
       html`
-        <code-detail .id="${id}" name="${name}"></code-detail>
+        <code-management-detail .codeId="${codeId}"></code-management-detail>
       `,
       {
         backdrop: true,
         size: 'large',
-        title: `${i18next.t('title.code_management_detail')} - ${name}`
+        title: `${i18next.t('title.code_management_detail')} - ${codeName}`
       }
     )
   }

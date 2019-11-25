@@ -53,8 +53,7 @@ export class CodeManagementDetail extends localize(i18next)(LitElement) {
 
   static get properties() {
     return {
-      id: String,
-      name: String,
+      codeId: String,
       searchFields: Array,
       config: Object
     }
@@ -172,11 +171,11 @@ export class CodeManagementDetail extends localize(i18next)(LitElement) {
 
   async fetchHandler({ page, limit, sorters = [{ name: 'rank' }] }) {
     let filters = []
-    if (this.id) {
+    if (this.codeId) {
       filters.push({
         name: 'common_code_id',
         operator: 'eq',
-        value: this.id
+        value: this.codeId
       })
     }
 
@@ -276,7 +275,7 @@ export class CodeManagementDetail extends localize(i18next)(LitElement) {
         for (let key in dirtyFields) {
           patchField[key] = dirtyFields[key].after
         }
-        patchField.commonCode = { id: this.id }
+        patchField.commonCode = { id: this.codeId }
         patchField.cuFlag = code.__dirty__
 
         return patchField
