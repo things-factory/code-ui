@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/code-ui",
-  "version": "1.0.0-alpha.10",
+  "version": "2.0.0",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -28,12 +28,12 @@
     "migration:revert": "node ./node_modules/typeorm/cli.js migration:revert"
   },
   "dependencies": {
-    "@things-factory/code-base": "^1.0.0-alpha.1",
-    "@things-factory/form-ui": "^1.0.0-alpha.1",
-    "@things-factory/grist-ui": "^1.0.0-alpha.1",
-    "@things-factory/i18n-base": "^1.0.0-alpha.1",
-    "@things-factory/layout-base": "^1.0.0-alpha.1",
-    "@things-factory/shell": "^1.0.0-alpha.1"
+    "@things-factory/code-base": "^2.0.0",
+    "@things-factory/form-ui": "^2.0.0",
+    "@things-factory/grist-ui": "^2.0.0",
+    "@things-factory/i18n-base": "^2.0.0",
+    "@things-factory/layout-base": "^2.0.0",
+    "@things-factory/shell": "^2.0.0"
   },
   "devDependencies": {}
 }
