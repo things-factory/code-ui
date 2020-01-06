@@ -1,3 +1,17 @@
 {
-  "label.module": "module"
+  "button.cancel": "batal",
+  "button.delete": "padam",
+  "button.save": "simpan",
+  "field.description": "keterangan",
+  "field.name": "nama",
+  "field.rank": "rank",
+  "field.updated_at": "updated at",
+  "field.updater": "updater",
+  "text.are_you_sure": "adakah anda pasti?",
+  "text.nothing_changed": "nothing changed",
+  "text.nothing_selected": "nothing selected",
+  "text.there_is_nothing_to_delete": "there is nothing to delete",
+  "text.there_is_nothing_to_save": "there is nothing to save",
+  "title.code_management": "code management",
+  "title.code_management_detail": "code management detail"
 }

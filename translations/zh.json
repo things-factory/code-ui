@@ -1,3 +1,17 @@
 {
-  "label.module": "模块"
+  "button.cancel": "取消",
+  "button.delete": "删除",
+  "button.save": "储存",
+  "field.description": "描述",
+  "field.name": "名字",
+  "field.rank": "列为",
+  "field.updated_at": "更新于",
+  "field.updater": "更新者",
+  "text.are_you_sure": "确定执行?",
+  "text.nothing_changed": "没有更改",
+  "text.nothing_selected": "没有选择",
+  "text.there_is_nothing_to_delete": "没有删除目标",
+  "text.there_is_nothing_to_save": "没有储存目标",
+  "title.code_management": "代码管理",
+  "title.code_management_detail": "代码管理详情"
 }
